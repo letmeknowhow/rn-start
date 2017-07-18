@@ -39,7 +39,7 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string/>
+	<string></string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSExceptionDomains</key>
@@ -52,7 +52,7 @@
 		</dict>
 	</dict>
 	<key>CodePushDeploymentKey</key>
-	<string>deployment-key-here</string>
+	<string>oOmUkWW0koGShYl9a-Nm9V2__Z_t45013a94-2611-4152-bc55-3121e7e38007</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Andale Mono.ttf</string>
@@ -89,6 +89,7 @@
 		<string>Skia.ttf</string>
 		<string>Times New Roman.ttf</string>
 		<string>Zocial.ttf</string>
+		<string>SimpleLineIcons.ttf</string>
 	</array>
 </dict>
 </plist>

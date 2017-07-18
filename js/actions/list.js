@@ -1,9 +1,7 @@
 
-import type { Action } from './types';
+import { SET_INDEX } from './types';
 
-export const SET_INDEX = 'SET_INDEX';
-
-export function setIndex(index:number):Action {
+export function setIndex(index) {
   return {
     type: SET_INDEX,
     payload: index,

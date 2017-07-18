@@ -1,16 +1,11 @@
 
-import type { Action } from '../actions/types';
-import { SET_USER } from '../actions/user';
-
-export type State = {
-    name: string
-}
+import { SET_USER } from '../actions/types';
 
 const initialState = {
   name: '',
 };
 
-export default function (state:State = initialState, action:Action): State {
+export default function (state = initialState, action) {
   if (action.type === SET_USER) {
     return {
       ...state,
