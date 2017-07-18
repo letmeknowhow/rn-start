@@ -1,9 +1,7 @@
-import React, { Component } from "react";
-import { TouchableOpacity } from "react-native";
-import { connect } from "react-redux";
-import BlankPage2 from "../blankPage2";
-import DrawBar from "../DrawBar";
-import { DrawerNavigator, NavigationActions } from "react-navigation";
+import React, { Component } from 'react';
+import { TouchableOpacity } from 'react-native';
+import { connect } from 'react-redux';
+import { DrawerNavigator, NavigationActions } from 'react-navigation';
 import {
   Container,
   Header,
@@ -15,12 +13,14 @@ import {
   Left,
   Body,
   Right
-} from "native-base";
-import { Grid, Row } from "react-native-easy-grid";
+} from 'native-base';
+import { Grid, Row } from 'react-native-easy-grid';
 
-import { setIndex } from "../../actions/list";
-import { openDrawer } from "../../actions/drawer";
-import styles from "./styles";
+import BlankPage2 from '../blankPage2';
+import DrawBar from '../DrawBar';
+import { setIndex } from '../../actions/list';
+import { openDrawer } from '../../actions/drawer';
+import styles from './styles';
 
 class Home extends Component {
   static navigationOptions = {
@@ -39,7 +39,7 @@ class Home extends Component {
   }
 
   render() {
-    console.log(DrawNav, "786785786");
+    console.log(DrawNav, '786785786');
     return (
       <Container style={styles.container}>
         <Header>
@@ -51,13 +51,13 @@ class Home extends Component {
                 DrawerNav.dispatch(
                   NavigationActions.reset({
                     index: 0,
-                    actions: [NavigationActions.navigate({ routeName: "Home" })]
+                    actions: [NavigationActions.navigate({ routeName: 'Home' })]
                   })
                 );
                 DrawerNav.goBack();
               }}
             >
-              <Icon active name="power" />
+              <Icon active name='power' />
             </Button>
           </Left>
 
@@ -68,9 +68,9 @@ class Home extends Component {
           <Right>
             <Button
               transparent
-              onPress={() => DrawerNav.navigate("DrawerOpen")}
+              onPress={() => DrawerNav.navigate('DrawerOpen')}
             >
-              <Icon active name="menu" />
+              <Icon active name='menu' />
             </Button>
           </Right>
         </Header>
@@ -81,7 +81,7 @@ class Home extends Component {
                 <TouchableOpacity
                   style={styles.row}
                   onPress={() =>
-                    this.props.navigation.navigate("BlankPage", {
+                    this.props.navigation.navigate('BlankPage', {
                       name: { item }
                     })}
                 >

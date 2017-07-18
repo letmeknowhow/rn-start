@@ -8,7 +8,7 @@ import configureStore from './configureStore';
 import getTheme from '../native-base-theme/components';
 import platform from '../native-base-theme/variables/platform';
 
-function setup():React.Component {
+function setup() {
   class Root extends Component {
 
     constructor() {

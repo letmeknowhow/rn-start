@@ -2,12 +2,12 @@ import { SET_INDEX } from '../actions/types';
 
 const initialState = {
   list: [
-    "React Native Starter Kit",
-    "React Navigation",
-    "NativeBase Easy Grid",
-    "NativeBase",
-    "CodePush",
-    "Redux"
+    'React Native Starter Kit',
+    'React Navigation',
+    'NativeBase Easy Grid',
+    'NativeBase',
+    'CodePush',
+    'Redux'
   ],
   selectedIndex: undefined
 };

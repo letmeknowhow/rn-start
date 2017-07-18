@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import {
   Container,
   Header,
@@ -11,7 +11,7 @@ import {
   Left,
   Right,
   Body
-} from "native-base";
+} from 'native-base';
 
 class BlankPage2 extends Component {
   static navigationOptions = {
@@ -24,7 +24,7 @@ class BlankPage2 extends Component {
         <Header>
           <Left>
             <Button transparent onPress={() => this.props.navigation.goBack()}>
-              <Icon name="ios-arrow-back" />
+              <Icon name='ios-arrow-back' />
             </Button>
           </Left>
 
@@ -35,9 +35,9 @@ class BlankPage2 extends Component {
           <Right>
             <Button
               transparent
-              onPress={() => this.props.navigation.navigate("DrawerOpen")}
+              onPress={() => this.props.navigation.navigate('DrawerOpen')}
             >
-              <Icon name="ios-menu" />
+              <Icon name='ios-menu' />
             </Button>
           </Right>
         </Header>

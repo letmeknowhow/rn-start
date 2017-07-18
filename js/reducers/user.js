@@ -7,6 +7,7 @@ const initialState = {
 
 export default function (state = initialState, action) {
   if (action.type === SET_USER) {
+    console.log('setuser');
     return {
       ...state,
       name: action.payload,

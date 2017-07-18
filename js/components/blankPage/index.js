@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import {
   Container,
   Header,
@@ -11,9 +11,9 @@ import {
   Left,
   Right,
   Body
-} from "native-base";
+} from 'native-base';
 
-import styles from "./styles";
+import styles from './styles';
 
 class BlankPage extends Component {
   static navigationOptions = {
@@ -28,7 +28,7 @@ class BlankPage extends Component {
 
   render() {
     const { props: { name, index, list } } = this;
-    console.log(this.props.navigation, "000000000");
+    console.log(this.props.navigation, '000000000');
     return (
       <Container style={styles.container}>
         <Header>
@@ -39,7 +39,7 @@ class BlankPage extends Component {
           </Left>
 
           <Body>
-            <Title>{name ? this.props.name : "Blank Page"}</Title>
+            <Title>{name ? this.props.name : 'Blank Page'}</Title>
           </Body>
 
           <Right />
@@ -49,7 +49,7 @@ class BlankPage extends Component {
           <Text>
             {this.props.navigation.state.params.name.item !== undefined
               ? this.props.navigation.state.params.name.item
-              : "Create Something Awesome . . ."}
+              : 'Create Something Awesome . . .'}
           </Text>
         </Content>
       </Container>

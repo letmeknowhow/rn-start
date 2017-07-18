@@ -1,5 +1,5 @@
-import React from "react";
-import { AppRegistry, Image, TouchableOpacity } from "react-native";
+import React from 'react';
+import { AppRegistry, Image, TouchableOpacity } from 'react-native';
 import {
   Button,
   Text,
@@ -8,8 +8,8 @@ import {
   ListItem,
   Content,
   Icon
-} from "native-base";
-const routes = ["Home", "BlankPage2"];
+} from 'native-base';
+const routes = ['Home', 'BlankPage2'];
 export default class DrawBar extends React.Component {
   static navigationOptions = {
     header: null
@@ -20,29 +20,29 @@ export default class DrawBar extends React.Component {
         <Content>
           <Image
             source={{
-              uri: "https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/react-navigation/img/drawer-cover.png"
+              uri: 'https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/react-navigation/img/drawer-cover.png'
             }}
             style={{
               height: 120,
-              alignSelf: "stretch",
-              justifyContent: "center",
-              alignItems: "center"
+              alignSelf: 'stretch',
+              justifyContent: 'center',
+              alignItems: 'center'
             }}
           >
             <TouchableOpacity
               style={{
                 height: 120,
-                alignSelf: "stretch",
-                justifyContent: "center",
-                alignItems: "center"
+                alignSelf: 'stretch',
+                justifyContent: 'center',
+                alignItems: 'center'
               }}
-              onPress={() => this.props.navigation.navigate("DrawerClose")}
+              onPress={() => this.props.navigation.navigate('DrawerClose')}
             >
               <Image
                 square
                 style={{ height: 80, width: 70 }}
                 source={{
-                  uri: "https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/react-navigation/img/logo.png"
+                  uri: 'https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/react-navigation/img/logo.png'
                 }}
               />
             </TouchableOpacity>
