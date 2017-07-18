@@ -1,4 +1,4 @@
-package com.nativestarterkit;
+package com.rnstart;
 
 import android.app.Application;
 
